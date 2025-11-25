@@ -185,14 +185,23 @@
 
 <section class="appt-section" id="appt">
   <h2>Appointment Request</h2>
-  <form class="appt-box" action="https://formsubmit.co/3236188500@vtext.com" method="POST"><input type="hidden" name="_cc" value="JaviMobileService@gmail.com"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_subject" value="New Appointment Request"><input type="hidden" name="_template" value="table">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="text" name="phone" placeholder="Phone Number" required>
-    <input type="text" name="location" placeholder="Location (City or Address)" required>
-    <input type="text" name="vin_plate" placeholder="License Plate or VIN (Required)" required>
-    <textarea rows="4" name="issue" placeholder="Describe the issue..." required></textarea>
-    <button class="submit-btn" >Submit Request</button>
-  </form>
+ <form class="appt-box" action="https://formsubmit.co/JaviMobileService@gmail.com" method="POST">
+
+  <!-- CC: Sends to your phone without needing activation -->
+  <input type="hidden" name="_cc" value="3236188500@vtext.com">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Appointment Request">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="text" name="phone" placeholder="Phone Number" required>
+  <input type="text" name="location" placeholder="Location (City or Address)" required>
+  <input type="text" name="vin_plate" placeholder="License Plate or VIN (Required)" required>
+  <textarea rows="4" name="issue" placeholder="Describe the issue..." required></textarea>
+
+  <button class="submit-btn">Submit Request</button>
+</form>
 </section>
 
 <footer>
